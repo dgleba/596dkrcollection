@@ -1,0 +1,23 @@
+
+status:
+
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@  
+#@  
+#@  
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   2021-09-21[Sep-Tue]16-27PM 
+
+cd /srv/dkr/
+cd /srv/dkr/596dkrcollection/
+
+git clone https://github.com/Budibase/budibase.git /tmp/budi611a --depth=1
+
+rsync -a /tmp/budi611a/hosting/ budi603c/
+
+https://docs.budibase.com/self-hosting/hosting-methods/docker-compose
+
+docker-compose --env-file hosting.properties up
+
+

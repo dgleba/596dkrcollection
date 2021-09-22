@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "Cert": "myservername.domain.com",
+    "Port": 4430,
+    "AliasPort": 443,
+    "RedirPort": 1800,
+    "AgentPong": 300,
+    "TlsOffload": true,
+    },
+    "domains": {
+    "": {
+    "certUrl": "https://127.0.0.1:443/"
+    }
+  }
+}
