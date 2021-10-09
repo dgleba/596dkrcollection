@@ -14,7 +14,7 @@ version: '3'
 networks:
   http-proxy:
   sister:
-    name: sister
+    # name: sister
 
 
 volumes:
@@ -26,6 +26,7 @@ services:
 
   shaarli:
     # http://192.168.88.60:14811
+    # http://172.27.0.30:14811
     # https://shar.dg.jgleba.com  
     image: shaarli/shaarli:${SHAARLI_DOCKER_TAG}
     # build: ./
@@ -41,13 +42,13 @@ services:
     ports:
       - 14811:80
       # - 443:443
-    environment:
-      - SHAARLI_VIRTUAL_HOST=shar.dg.jgleba.com  
-      - VIRTUAL_NETWORK=sister
-      - VIRTUAL_PORT=80
-      - VIRTUAL_HOST=shar.dg.jgleba.com
-      - LETSENCRYPT_HOST=shar.dg.jgleba.com
-      - LETSENCRYPT_EMAIL=dgleba@gmail.com
+    # environment:
+      # - SHAARLI_VIRTUAL_HOST=shar.d.jgleba.com  
+      # - VIRTUAL_NETWORK=sister
+      # - VIRTUAL_PORT=80
+      # - VIRTUAL_HOST=shar.d.jgleba.com
+      # - LETSENCRYPT_HOST=shar.d.jgleba.com
+      # - LETSENCRYPT_EMAIL=dgleba@gmail.com
 
 
     # labels:
