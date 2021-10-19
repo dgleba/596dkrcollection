@@ -11,10 +11,10 @@
 #                             See: https://hub.docker.com/r/shaarli/shaarli/tags
 version: '3'
 
-networks:
-  http-proxy:
-  sister:
-    # name: sister
+# networks:
+  # http-proxy:
+  # sister:
+    # # name: sister
 
 
 volumes:
@@ -30,9 +30,9 @@ services:
     # https://shar.dg.jgleba.com  
     image: shaarli/shaarli:${SHAARLI_DOCKER_TAG}
     # build: ./
-    networks:
-      - http-proxy
-      - sister
+    # networks:
+      # - http-proxy
+      # - sister
     volumes:
       # - ../sysdata/sharlicache601c:/var/www/shaarli/cache
       # - ../data_sharli_601c:/var/www/shaarli/data
