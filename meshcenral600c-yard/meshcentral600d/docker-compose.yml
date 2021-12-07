@@ -22,8 +22,9 @@ services:
             # - LETSENCRYPT_HOST=mesh.dg.jgleba.com
             # - LETSENCRYPT_EMAIL=dgleba@gmail.com
         volumes:
-            - ../sysdata/meshcentral-data:/opt/meshcentral/meshcentral-data    #config.json and other important files live here. A must for data persistence
+            - ../sysdata/meshcentral-data:/opt/meshcentral/meshcentral-data   #config.json and other important files live here. A must for data persistence
             - ../sysdata/meshcentral-user_files:/opt/meshcentral/meshcentral-files    #where file uploads for users live
+            - ./config05.json:/opt/meshcentral/meshcentral-data/config.json
         # networks:
         #     - sister
         logging:

@@ -1,0 +1,17 @@
+
+// page 41/67 of user instruction for haproxy
+
+{
+    "settings": {
+    "Cert": "myservername.domain.com"
+    "Port": 444,
+    "AliasPort": 443,
+    "RedirPort": 0,
+    "TlsOffload": "127.0.0.1"
+    },
+    "domains": {
+        "": {
+        "certUrl": "https://127.0.0.1:443/"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://info.meshcentral.com/downloads/meshcentral-config-schema.json",
+
+  "__comment1__": "This is a simple configuration file, all values and sections that start with underscore (_) are ignored. Edit a section and remove the _ in front of the name. Refer to the user's guide for details.",
+  "__comment2__": "See node_modules/meshcentral/sample-config-advanced.json for a more advanced example.",
+
+  "settings": {
+    "cert": "mesh.dg.jgleba.com",
+    "_WANonly": true,
+    "_LANonly": true,
+    "_sessionKey": "My.Really.Secret.Password134de",
+    "port": 4430,
+    "_aliasPort": 443,
+    "redirPort": 80,
+    "_redirAliasPort": 80,
+    "AgentPong": 300,
+    "TLSOffload": "192.168.88.60",
+    "SelfUpdate": false,
+    "AllowFraming": false,
+    "WebRTC": false
+  },
+  "domains": {
+	"": {
+	"_title": "dgServer",
+    "_title2": "dgServerMesh",
+    "_minify": true,
+    "NewAccounts": true,
+	"_userNameIsEmail": true,
+    "_certUrl": "https://192.168.88.60:443/"
+	}
+  }
+}
