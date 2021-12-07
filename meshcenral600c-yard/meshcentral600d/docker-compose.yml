@@ -9,10 +9,10 @@ services:
         ports:
             - 8086:443  #MeshCentral will moan and try everything not to use port 80, but you can also use it if you so desire, just change the config.json according to your needs
         environment:
-            - HOSTNAME=mesh.dg.jgleba.com  
+            - HOSTNAME=192.168.88.60
             #- REVERSE_PROXY=false     #set to your reverse proxy IP if you want to put meshcentral behind a reverse proxy
-            - REVERSE_PROXY=192.168.88.60
-            - REVERSE_PROXY_TLS_PORT=4430
+            # - REVERSE_PROXY=192.168.88.60
+            # - REVERSE_PROXY_TLS_PORT=4430
             - IFRAME=false    #set to true if you wish to enable iframe support
             - ALLOW_NEW_ACCOUNTS=true    #set to false if you want disable self-service creation of new accounts besides the first (admin)
             - WEBRTC=false  #set to true to enable WebRTC - per documentation it is not officially released with meshcentral, but is solid enough to work with. Use with caution
