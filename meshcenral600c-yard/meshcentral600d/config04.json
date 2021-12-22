@@ -2,6 +2,7 @@
   "$schema": "http://info.meshcentral.com/downloads/meshcentral-config-schema.json",
   "settings": {
     "cert": "192.168.88.60",
+    
     "_LANonly": true,
     "_sessionKey": "MyReallySecretPassword1",
     "port": 443,
@@ -9,7 +10,7 @@
     "redirPort": 80,
     "_redirAliasPort": 80,
     "AgentPong": 300,
-    "TLSOffload": true,
+    "TlsOffload": "127.0.0.1",
     "SelfUpdate": false,
     "AllowFraming": "false",
     "WebRTC": "false"
@@ -20,8 +21,9 @@
     "_title2": "Servername",
     "_minify": true,
     "NewAccounts": "true",
-	"_userNameIsEmail": true,
-    "certUrl": "https://:"
+  	"_userNameIsEmail": true,
+    "certUrl": "https://192.168.88.60:443/"
 	}
   }
 }
+
